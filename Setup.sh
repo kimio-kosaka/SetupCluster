@@ -24,6 +24,8 @@ cp ./dispman_vncserver ~/
 sudo apt-get install -y nfs-kernel-server
 #sudo echo "/home/pi/mpi  *(rw,sync,fsid=0,crossmnt,no_subtree_check)" >>/etc/export
 
+sudo apt-get install -y vim
+
 #include nodesinfo
 . ./nodesinfo.sh
 

@@ -3,6 +3,9 @@ if [ $1 = "" ]; then
     echo "nothing arg"
     exit 1
 fi
+
+sudo apt-get autoremove sonic-pi -y
+
 #system update/upgrade
 sudo apt-get update
 sudo apt-get dist-upgrade -y

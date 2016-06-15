@@ -53,6 +53,8 @@ sudo cp dhcpcd.conf /etc/dhcpcd.conf
 #MPI node list
 cp hosts.org hosts
 echo 127.0.1.1 $nameprefix-$1 >> hosts
+echo $netaddr.1 router >> hosts
+echo $netaddr.2 fs >> hosts
 for nn in $nodelist
 do
     echo $netaddr.$(expr $baseaddr + $nn) $nameprefix-$nn >> hosts
